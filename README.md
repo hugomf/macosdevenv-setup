@@ -2,6 +2,9 @@
 
 ## Step 1
 
+- Download and Install [iterm2](https://iterm2.com/)
+
+
 - Install [OhmyZsh](https://ohmyz.sh/)
 
 
@@ -107,7 +110,7 @@ sudo installer -pkg AWSCLIV2.pkg -target /
 ## Step 4:  Install the following Applications
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [iTerm2](https://iterm2.com/)
+- [iTerm2](https://iterm2.com/) - You might have it already installed.
 - [IntelliJ](https://www.jetbrains.com/idea/)
 - [Docker](https://www.docker.com)
 
