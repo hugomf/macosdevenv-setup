@@ -136,3 +136,11 @@ Download the following Plugins:
 - [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
+
+
+## Step 6: Configure git (ssh keys)
+
+- Set up SSH keys: 
+
+SSH keys allow you to securely connect to remote servers and repositories without entering a password every time. To set up SSH keys, follow the instructions in the GitHub documentation: [SSH Keys Docs](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
