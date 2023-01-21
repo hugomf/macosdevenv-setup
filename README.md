@@ -1,12 +1,47 @@
 # Development Environment Setup
 
-## Step 1
+
+## Step 1 -  Download and Install CommandLine Tools for Xcode 
+
+
+Currently there are two options to install the CommandLine tools
+
+1.- Open the Macos Terminal and type the following command:
+
+```shell
+xcode-select --install
+```
+
+2.- Download CommandLine Tools from the website
+
+- Download CL Tools From: [Apple Developer Site](https://developer.apple.com/download/all/`), you will have to login with your appleid (iCloud) account.
+
+- Search for Command Line tools, and download the desired version, for example 
+
+    - *Command Line Tools for Xcode 14.2 - [Here](https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_14.2/Command_Line_Tools_for_Xcode_14.2.dmg)
+
+3.- Open the terminal and verify if the CommandLine Tools for Xcode installation was successful by entering the following command:
+
+```shell
+ xcode-select -p
+```
+
+## Step 2 - Download and Install HomeBrew
+
+Make sure CommandLine Tools for Xcode is installed.
+
+- Download and Install [HomeBrew](https://brew.sh/) using the following command:
+
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+## Step 3 - Download, Install and configure iTerm2
 
 - Download and Install [iterm2](https://iterm2.com/)
 
-
 - Install [OhmyZsh](https://ohmyz.sh/)
-
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -24,82 +59,68 @@ echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zs
 ```
 
 
-## Step 2 Install version managers for Python, Java and Node
+## Step 4 Install version managers for Python, Java and Node
 
+- ### Install **(Java Version Manager)** 
+    - Install [sdkman](https://sdkman.io/) 
 
-- Install [sdkman](https://sdkman.io/) (Java Version Manager)
-
-```shell
+    ```shell
     curl -s "https://get.sdkman.io" | bash
 
     source "$HOME/.sdkman/bin/sdkman-init.sh"
-```
+    ```
 
-Check sdkman version:
+    - Check `sdkman` version:
 
-```shell
-sdk version
-```
+    ```shell
+    sdk version
+    ```
 
-- Install [nvm](https://sdkman.io/) (Node Version Manager)
+- ### Install [nvm](https://sdkman.io/) **(Node Version Manager)**
 
-```shell
-    curl -s "https://get.sdkman.io" | bash
-```
+    ```shell
+        curl -s "https://get.sdkman.io" | bash
+    ```
 
+- ### Install [pyenv](https://github.com/pyenv/pyenv) **(Python version manager)**
 
-- Install [pyenv]() Python version manager
+    - Make sure HomeBrew is installed (Step 2), and then proceed to install `pyenv` as follows:
 
+    ```shell
+    brew update
+    brew install pyenv
+    ```
+    - Configure `pyenv` in your `.zshrc`:
 
-Install dependencies for Homebrew (Xcode Command Line tools)
+    open your `~/.zshrc` file in your favorite editor and add the following lines at the end of the file:
 
-```shell
-xcode-select --install
-```
- make sure xcode command line tools are already installed
+    ```shell
+    export PYENV_ROOT="$HOME/.pyenv"
+    command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+    ```
 
-```shell
- xcode-select -p
-```
+    - Now we are able to install a python version locally or globally for example:
 
+    ```shell
+    pyenv global 3.9.4
+    pyenv local 3.9.4
+    ```
 
-Install [Brew](https://brew.sh/):
+    - Check your python version
+    ```shell
+    python --version
+    ```
 
+## Step 5: Configure git (ssh keys)
 
-```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+- Set up SSH keys: 
 
-Once Brew is installed, proceed to install pyenv
-```shell
-brew update
-brew install pyenv
-```
-
-Configure pyenv:
-
-open your `~/.zshrc` file in your favorite editor and add the following lines at the end of the file:
-
-```shell
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-```
-
-Now are able to install a python version locally or globally for example:
+SSH keys allow you to securely connect to remote servers and repositories without entering a password every time. To set up SSH keys, follow the instructions in the GitHub documentation: [SSH Keys Docs](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 
-```shell
-pyenv global 3.9.4
-pyenv local 3.9.4
-```shell
-Check your python version
-```shell
-python --version
-```
 
-
-## Step 3: Install AWS CLI:
+## Step 6: Install AWS CLI:
 
 ```shell
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
@@ -107,17 +128,14 @@ sudo installer -pkg AWSCLIV2.pkg -target /
 ```
 
 
-## Step 4:  Install the following Applications
+## Step 7:  Install the following Applications
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [iTerm2](https://iterm2.com/) - You might have it already installed.
 - [IntelliJ](https://www.jetbrains.com/idea/)
 - [Docker](https://www.docker.com)
 
 
-
-
-### Configuring Visual Studio Code
+### VSCode Plugins 
 
 Download the following Plugins:
 
@@ -137,10 +155,4 @@ Download the following Plugins:
 - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
 
-
-## Step 6: Configure git (ssh keys)
-
-- Set up SSH keys: 
-
-SSH keys allow you to securely connect to remote servers and repositories without entering a password every time. To set up SSH keys, follow the instructions in the GitHub documentation: [SSH Keys Docs](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
