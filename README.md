@@ -41,23 +41,29 @@ Make sure CommandLine Tools for Xcode is installed.
 
 - Download and Install [iterm2](https://iterm2.com/)
 
-- Install [OhmyZsh](https://ohmyz.sh/)
+    - Install [OhmyZsh](https://ohmyz.sh/):
 
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```shell
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-```
-
-
-- Install [Powerlevel10k](https://ohmyz.sh/)
+    ```
 
 
-```shell
-brew install romkatv/powerlevel10k/powerlevel10k
+    - Install [Powerlevel10k](https://ohmyz.sh/)
+    ```shell
+    brew install romkatv/powerlevel10k/powerlevel10k
+    ```
 
-echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
-```
+    - Configure `Powerlevel10k` on `.zshrc`
+    ```shell
+    echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+    ```
 
+    - Close the `iterm2` window and open it again, a menu will appear.
+
+    - Install the `MesloLGS Nerd Font`, configure the icons and the prompt attributes by following the instructions.
+
+    - **Note:** If you are unable to see the icons, you may need to open the iterm2 **Settings>Profiles>Text>** and in the Font Section you will have to manually set the `MesloLGS NF` font.
 
 ## Step 4 Install version managers for Python, Java and Node
 
