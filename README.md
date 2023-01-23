@@ -16,6 +16,7 @@
       - [Java Development](#java-development)
       - [Python Development](#python-development)
       - [Javascript, React, etc](#javascript-react-etc)
+    - [Markdown edition](#markdown-edition)
 
 ## Step 1 -  Download and Install CommandLine Tools for Xcode
 
@@ -188,7 +189,6 @@ Download the following Plugins:
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
 
-
 #### Javascript, React, etc
 
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -196,3 +196,9 @@ Download the following Plugins:
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [Autorename tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
+### Markdown edition
+
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
