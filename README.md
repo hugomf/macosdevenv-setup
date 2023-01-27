@@ -122,29 +122,12 @@ Make sure CommandLine Tools for Xcode is installed.
 
   - Usage:
 
-    - To install the latest version of node:
-
      ```shell
-          nvm install node # "node" is an alias for the latest version
+          nvm ls-remote       # To see all available node versions
+          nvm ls              # If you want to list what versions are installed
+          nvm install node    # To install the latest version of node
+          nvm install 14.7.0  # To install a specific version of node
      ```
-
-    - To install a specific version of node:
-
-    ```shell
-      nvm install 14.7.0 # or 16.3.0, 12.22.1, etc
-    ```
-
-    - To list available versions:
-
-    ```shell
-      nvm ls-remote
-    ```
-
-    - If you want to see what versions are installed:
-
-    ```shell
-      nvm ls
-    ```
 
 - ### Install [pyenv](https://github.com/pyenv/pyenv) **(Python version manager)**
 
@@ -163,7 +146,7 @@ Make sure CommandLine Tools for Xcode is installed.
     pyenv versions        # To see what versions are installed.
     pyenv install -l      # Gives the list of all available versions.
     pyenv install 3.9.4   # just install
-    pyenv global 3.9.4    # system 
+    pyenv global 3.9.4    # Sets a python version as the default (global) version.
     pyenv local 3.9.4     # use python version locally
     pyenv uninstall 3.94  # to uninstall
     ```
@@ -172,6 +155,43 @@ Make sure CommandLine Tools for Xcode is installed.
   
     ```shell
     python --version
+    ```
+
+- ### Install [gvm](https://github.com/moovweb/gvm) **(GOLang version manager)**
+
+    >**Note:** Make sure `HomeBrew` is installed (Follow Step 2), and then proceed to install `gvm` as follows:
+  
+  - Install any version of `golang`
+  
+    ```shell
+    brew update
+    brew install go  # Install any golang version (this is needed because binary versions are not available anymore)
+    brew install mercurial # Version control tool to download "go source code" to compile the desired version
+    ```
+
+  - Install `gvm` (Use zsh or bash according your current shell system)
+
+    ```shell
+      zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+    ```
+
+- Usage:
+
+  - Now you are able to install a `golang` version locally or globally for example:
+
+    ```shell
+    gvm list                    # To list what versions are installed in your system.
+    gvm listall                 # Gives the list of all available versions.
+    gvm install go1.16          # Install a specific golang version
+    gvm use go1.16 [--default]  # Sets the specified golang version as the default (global) version.
+    gvm use go1.16              # use golang version locally
+    gvm implode                 # to uninstall
+    ```
+
+  - Verify your `golang` version
+  
+    ```shell
+      go version
     ```
 
 ## Step 5 - Configure git (ssh keys)
