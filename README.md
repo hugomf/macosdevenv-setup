@@ -142,8 +142,7 @@ Make sure CommandLine Tools for Xcode is installed.
     brew install pyenv
     ```
 
-- Configure `pyenv` in your `.zshrc`:
-
+- Usage:
 
   - Now you are able to install a python version locally or globally for example:
 
