@@ -149,7 +149,7 @@ Make sure CommandLine Tools for Xcode is installed.
   - Now you are able to install a python version locally or globally for example:
 
     ```shell
-    pyenv versions        # to retrieve the installed python versions.
+    pyenv versions        #  to see what versions are installed.
     pyenv install -l      # gives the list of all available versions.
     pyenv install 3.9.4   # just install
     pyenv global 3.9.4    # system 
