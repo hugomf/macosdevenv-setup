@@ -144,17 +144,11 @@ Make sure CommandLine Tools for Xcode is installed.
 
 - Configure `pyenv` in your `.zshrc`:
 
-  - Open your `~/.zshrc` file in your favorite editor and add the following lines at the end of the file:
-
-    ```shell
-    export PYENV_ROOT="$HOME/.pyenv"
-    command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
-    ```
 
   - Now you are able to install a python version locally or globally for example:
 
     ```shell
+    pyenv versions        # to retrieve the installed python versions.
     pyenv install -l      # gives the list of all available versions.
     pyenv install 3.9.4   # just install
     pyenv global 3.9.4    # system 
