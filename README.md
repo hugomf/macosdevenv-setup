@@ -101,32 +101,34 @@ Make sure CommandLine Tools for Xcode is installed.
 
 - ### Install [nvm](https://sdkman.io/) **(Node Version Manager)**
 
-  1. Type the following command to download an install nvm:
+  - Type the following command to download an install nvm:
 
     ```shell
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
     ```
 
-  2. Close and reopen your terminal
+  - Close and reopen your terminal
 
-  3. To install the latest version of node:
+  - Usage:
+
+    - To install the latest version of node:
 
      ```shell
           nvm install node # "node" is an alias for the latest version
      ```
-  4. To install a specific version of node:
+    - To install a specific version of node:
 
     ```shell
       nvm install 14.7.0 # or 16.3.0, 12.22.1, etc
     ```
 
-  5. To list available versions:
+    - To list available versions:
 
     ```shell
       nvm ls-remote
     ```
 
-  6. If you want to see what versions are installed:
+    - If you want to see what versions are installed:
 
     ```shell
       nvm ls
