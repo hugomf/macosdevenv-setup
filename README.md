@@ -77,6 +77,23 @@ Make sure CommandLine Tools for Xcode is installed.
 
 - Install `MesloLGS NF` *font*, configure the icons and the prompt attributes by following the instructions.
 
+- To install  `MesloLGS NF` *font* manually: 
+
+  **powerlevel10k** should do that for you, this step should be done if the font is not installed properly.
+
+  - macos:
+
+    ```shell
+
+      cd ~/Library/Fonts && { 
+      curl -Lo 'MesloLGS NF Regular.ttf' 'https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf'
+      curl -Lo 'MesloLGS NF Italic.ttf' 'https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf'
+      curl -Lo 'MesloLGS NF Bold.ttf' 'https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf'
+      curl -Lo 'MesloLGS NF Bold Italic.ttf' 'https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf'
+      cd -; }
+
+    ```
+
 > **Note:** If you are unable to see the icons, you may need to open the iterm2 **Settings>Profiles>Text>** and in the Font Section you will have to manually set the `MesloLGS NF` font.
 
 ## Step 4 - Install version managers for Python, Java and Node
