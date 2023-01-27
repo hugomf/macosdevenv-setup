@@ -109,6 +109,30 @@ Make sure CommandLine Tools for Xcode is installed.
 
   2. Close and reopen your terminal
 
+  3. To install the latest version of node:
+
+     ```shell
+          nvm install node # "node" is an alias for the latest version
+     ```
+  4. To install a specific version of node:
+
+    ```shell
+      nvm install 14.7.0 # or 16.3.0, 12.22.1, etc
+    ```
+
+  5. To list available versions:
+
+    ```shell
+      nvm ls-remote
+    ```
+
+  6. If you want to see what versions are installed:
+
+    ```shell
+      nvm ls
+    ```
+
+
 - ### Install [pyenv](https://github.com/pyenv/pyenv) **(Python version manager)**
 
     >**Note:** Make sure HomeBrew is installed (Follow Step 2), and then proceed to install `pyenv` as follows:
