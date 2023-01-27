@@ -101,9 +101,13 @@ Make sure CommandLine Tools for Xcode is installed.
 
 - ### Install [nvm](https://sdkman.io/) **(Node Version Manager)**
 
+  1. Type the following command to download an install nvm:
+
     ```shell
-        curl -s "https://get.sdkman.io" | bash
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
     ```
+
+  2. Close and reopen your terminal
 
 - ### Install [pyenv](https://github.com/pyenv/pyenv) **(Python version manager)**
 
