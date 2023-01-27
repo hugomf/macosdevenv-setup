@@ -98,6 +98,18 @@ Make sure CommandLine Tools for Xcode is installed.
     ```shell
     sdk version
     ```
+  - Usage:
+
+    ```shell
+      sdk list java                   # To list all available versions
+      sdk list java | grep installed  # To see what versions are installed 
+      sdk install java 8.0.362-tem    # Install a Java version
+
+      sdk use java 8.0.362-tem        # To set Java version locally, you need to navigate to the project's directory
+      sdk default java 8.0.362-tem    # Sets the specified version of Java as the default version.
+
+      sdk current java                # Check current java version
+    ```
 
 - ### Install [nvm](https://sdkman.io/) **(Node Version Manager)**
 
@@ -149,8 +161,8 @@ Make sure CommandLine Tools for Xcode is installed.
   - Now you are able to install a python version locally or globally for example:
 
     ```shell
-    pyenv versions        #  to see what versions are installed.
-    pyenv install -l      # gives the list of all available versions.
+    pyenv versions        # To see what versions are installed.
+    pyenv install -l      # Gives the list of all available versions.
     pyenv install 3.9.4   # just install
     pyenv global 3.9.4    # system 
     pyenv local 3.9.4     # use python version locally
