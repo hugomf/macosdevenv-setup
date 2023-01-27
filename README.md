@@ -1,7 +1,5 @@
 # Development Environment Setup
 
-
-
 - [Development Environment Setup](#development-environment-setup)
   - [Step 1 -  Download and Install CommandLine Tools for Xcode](#step-1----download-and-install-commandline-tools-for-xcode)
   - [Step 2 - Download and Install HomeBrew](#step-2---download-and-install-homebrew)
@@ -85,7 +83,7 @@ Make sure CommandLine Tools for Xcode is installed.
 
 - Install **(Java Version Manager)**
 
-  - Install [sdkman](https://sdkman.io/) 
+  - Install [sdkman](https://sdkman.io/)
 
     ```shell
     curl -s "https://get.sdkman.io" | bash
@@ -98,6 +96,7 @@ Make sure CommandLine Tools for Xcode is installed.
     ```shell
     sdk version
     ```
+
   - Usage:
 
     ```shell
@@ -128,6 +127,7 @@ Make sure CommandLine Tools for Xcode is installed.
      ```shell
           nvm install node # "node" is an alias for the latest version
      ```
+
     - To install a specific version of node:
 
     ```shell
@@ -145,7 +145,6 @@ Make sure CommandLine Tools for Xcode is installed.
     ```shell
       nvm ls
     ```
-
 
 - ### Install [pyenv](https://github.com/pyenv/pyenv) **(Python version manager)**
 
@@ -177,10 +176,9 @@ Make sure CommandLine Tools for Xcode is installed.
 
 ## Step 5 - Configure git (ssh keys)
 
-- Set up SSH keys: 
+- Set up SSH keys:
 
     SSH keys allow you to securely connect to remote servers and repositories without entering a password every time. To set up SSH keys, follow the instructions in the GitHub documentation: [SSH Keys Docs](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
 
 ## Step 6 - Install AWS CLI
 
@@ -190,7 +188,6 @@ Make sure CommandLine Tools for Xcode is installed.
     curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
     sudo installer -pkg AWSCLIV2.pkg -target /
     ```
-
 
 ## Step 7 - Install the following Applications
 
@@ -213,7 +210,6 @@ Download the following Plugins:
 - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
 - [GNU Assembler Language Support](https://marketplace.visualstudio.com/items?itemName=basdp.language-gas-x86)
-
 
 #### Java Development
 
