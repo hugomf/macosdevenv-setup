@@ -124,6 +124,7 @@ Make sure CommandLine Tools for Xcode is installed.
       sdk use java 8.0.362-tem        # To set Java version locally, you need to navigate to the project's directory
       sdk default java 8.0.362-tem    # Sets the specified version of Java as the default version.
 
+
       sdk current java                # Check current java version
     ```
 
@@ -150,9 +151,18 @@ Make sure CommandLine Tools for Xcode is installed.
 
     >**Note:** Make sure HomeBrew is installed (Follow Step 2), and then proceed to install `pyenv` as follows:
 
+  - Install pyenv
     ```shell
     brew update
     brew install pyenv
+    ```
+
+  - Add the following configuration at the end of your `.zshrc` or `.bashrc` file
+
+    ```shell
+      export PYENV_ROOT="$HOME/.pyenv/shims"
+      export PATH="$PYENV_ROOT:$PATH"
+      export PIPENV_PYTHON="$PYENV_ROOT/python"
     ```
 
 - Usage:
