@@ -7,7 +7,8 @@
   - [Step 4 - Install version managers for Python, Java and Node](#step-4---install-version-managers-for-python-java-and-node)
   - [Step 5 - Configure git (ssh keys)](#step-5---configure-git-ssh-keys)
   - [Step 6 - Install AWS CLI](#step-6---install-aws-cli)
-  - [Step 7 - Install the following Applications](#step-7---install-the-following-applications)
+  - [Step 7 - Install Docker](#step-7---install-docker)
+  - [Step 8 - Install the following Applications](#step-8---install-the-following-applications)
     - [VSCode Plugins](#vscode-plugins)
       - [UI](#ui)
       - [Development](#development)
@@ -236,11 +237,27 @@ Make sure CommandLine Tools for Xcode is installed.
     sudo installer -pkg AWSCLIV2.pkg -target /
     ```
 
-## Step 7 - Install the following Applications
+## Step 7 - Install Docker
+
+Currently, there are two ways to install *Docker* in MacOS X:
+
+1. Install Docker Desktop from [Docker's website](https://www.docker.com/products/docker-desktop/): Although this is the easiest way, Docker Desktop is usually more heavyweight than Docker Client
+
+2. Install [Colima](https://github.com/abiosoft/colima) and Docker CLI using [HomeBrew]((#step-2---download-and-install-homebrew))
+
+   - Follow the instructions from this [Guide](https://smallsharpsoftwaretools.com/tutorials/use-colima-to-run-docker-containers-on-macos/)
+
+>**Note:** Follow this [Link](https://cri.dev/posts/2020-07-06-How-to-solve-Docker-docker-credential-desktop-not-installed-or-not-available-in-PATH/) If you are trying to use Docker Compose or AWS SAM and if you are getting this error:
+   ```
+    dockerpycreds.errors.InitializationError: docker-credential-desktop not installed or not available in PATH
+    [8929] Failed to execute script docker-compose
+   ```
+
+
+## Step 8 - Install the following Applications
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [IntelliJ](https://www.jetbrains.com/idea/)
-- [Docker](https://www.docker.com)
 - [Rectangle](https://rectangleapp.com/)
 
 ### VSCode Plugins
