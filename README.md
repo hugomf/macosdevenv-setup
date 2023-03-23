@@ -1,4 +1,4 @@
-# Development Environment Setup
+# Development Environment Setup ![Macos](https://shields.io/badge/MacOs-zsh-green?logo=apple&style=plastic)
 
 - [Development Environment Setup](#development-environment-setup)
   - [Step 1 -  Download and Install CommandLine Tools for Xcode](#step-1----download-and-install-commandline-tools-for-xcode)
